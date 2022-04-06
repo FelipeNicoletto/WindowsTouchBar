@@ -5,7 +5,7 @@ using System.Runtime.Intrinsics.X86;
 
 namespace WindowsTouchBar;
 
-unsafe class LockedFrameBuffer
+unsafe class LockedFrameBuffer : IDisposable
 {
     private readonly IntPtr _deviceHandle;
     private int _bufferSize;
@@ -29,13 +29,7 @@ unsafe class LockedFrameBuffer
 
     public IntPtr Address { get; private set; }
 
-    //public PixelSize Size => new PixelSize(2008, 60);
-
     public int RowBytes => _width * 4;
-
-    //public Vector Dpi { get; }
-
-    //public PixelFormat Format => PixelFormat.Rgba8888;
 
     public unsafe void VSync()
     {

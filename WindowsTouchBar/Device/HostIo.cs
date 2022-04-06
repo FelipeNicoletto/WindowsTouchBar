@@ -33,6 +33,10 @@ static class DfrHostIo
     public static uint IOCTL_DFR_GET_FN_STATUS =>
         ControlCode(FILE_DEVICE_DFR, FUNCTION_QUERY_FN_KEY, METHOD_BUFFERED, FILE_READ_DATA);
 
+    public const uint IOCTL_DFR_KBD_FN_PRESSED = 0xb4042404;
+
+    public const uint IOCTL_DFR_KBD_FN_RELEASED = 0xb4042408;
+
     public const uint DFR_FRAMEBUFFER_FORMAT = 0x52474241;
 
     public static bool ClearDfrFrameBuffer(IntPtr deviceHandle)
@@ -79,6 +83,34 @@ static class DfrHostIo
 
         Marshal.FreeHGlobal(statusPtr);
         return ioctlStatus;
+    }
+
+    public static bool SetFnKeyPressed(IntPtr deviceHandle)
+    {
+        return NativeMethods.DeviceIoControl(
+            deviceHandle,
+            IOCTL_DFR_KBD_FN_PRESSED,
+            IntPtr.Zero,
+            0,
+            IntPtr.Zero,
+            0,
+            IntPtr.Zero,
+            IntPtr.Zero
+        );
+    }
+
+    public static bool SetFnKeyReleased(IntPtr deviceHandle)
+    {
+        return NativeMethods.DeviceIoControl(
+            deviceHandle,
+            IOCTL_DFR_KBD_FN_RELEASED,
+            IntPtr.Zero,
+            0,
+            IntPtr.Zero,
+            0,
+            IntPtr.Zero,
+            IntPtr.Zero
+        );
     }
 }
 

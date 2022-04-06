@@ -8,17 +8,17 @@ namespace WindowsTouchBar;
 
 internal class TouchReceiver
 {
-    private HidDevice _digitizer;
-    private ReportDescriptor _reportDescr;
-    private HidStream _hidStream;
-    private HidDeviceInputReceiver _hidDeviceInputReceiver;
-    private DeviceItemInputParser _hiddeviceInputParser;
+    private readonly HidDevice _digitizer;
+    private readonly ReportDescriptor _reportDescr;
+    private readonly HidStream _hidStream;
+    private readonly HidDeviceInputReceiver _hidDeviceInputReceiver;
+    private readonly DeviceItemInputParser _hiddeviceInputParser;
     private readonly int _width;
     private readonly int _height;
-    private TouchReport[] _prevReports;
+    //private TouchReport[] _prevReports;
     private int _prevTappedSlotIndex;
 
-    public event Action<TouchEventArgs> Event;
+    public event Action<TouchEventArgs>? Event;
 
     public TouchReceiver(int width, int height)
     {
@@ -142,7 +142,7 @@ internal class TouchReceiver
             }
 
             // Update cache
-            _prevReports = currentReports;
+            //_prevReports = currentReports;
         }
     }
 }

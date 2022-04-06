@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,8 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="HidSharp" Version="2.1.0" />
+    <PackageReference Include="InputSimulatorCore" Version="1.0.5" />
     <PackageReference Include="SkiaSharp" Version="2.80.3" />
+    <PackageReference Include="System.Management" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>

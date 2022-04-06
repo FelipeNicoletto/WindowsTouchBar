@@ -34,7 +34,7 @@ static class SetupAPI
         IntPtr deviceInterfaceDetailData,
         uint deviceInterfaceDetailDataSize,
         out uint requiredSize,
-        SP_DEVINFO_DATA deviceInfoData
+        SP_DEVINFO_DATA? deviceInfoData
     );
 }
 

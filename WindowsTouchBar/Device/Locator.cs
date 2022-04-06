@@ -8,9 +8,9 @@ public class Locator
 {
     static Guid DfrDisplayInterfaceGuid = Guid.Parse("2003cacd-9e7c-477c-ab06-a5a8bbb1a63e");
 
-    public static string FindDfrDevice()
+    public static string? FindDfrDevice()
     {
-        string instancePath = null;
+        string? instancePath = null;
         var bResult = true;
         uint i = 0;
 
