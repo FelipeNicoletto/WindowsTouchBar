@@ -4,7 +4,6 @@ namespace WindowsTouchBar.Interop;
 
 internal class BrightlessAPI
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public static int GetCurrentBrightness()
     {
         var scope = new ManagementScope("root\\WMI");
@@ -27,7 +26,6 @@ internal class BrightlessAPI
         return 0;
     }
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Interoperability", "CA1416:Validate platform compatibility", Justification = "<Pending>")]
     public static void SetCurrentBrightness(int value)
     {
         var scope = new ManagementScope("root\\WMI");
