@@ -1,0 +1,149 @@
+{
+  "views": [
+    {
+      "type": "function",
+      "default": true
+    },
+    {
+      "type": "media",
+      "default": false
+    },
+    {
+      "type": "custom",
+      "application": "msedge.exe",
+      "components": [
+        {
+          "type": "button",
+          "icon": "\uE72B",
+          "keyCodes": [ "LEFT" ],
+          "modifierKeyCodes": [ "MENU" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE72A",
+          "keyCodes": [ "RIGHT" ],
+          "modifierKeyCodes": [ "MENU" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE72C",
+          "keyCodes": [ "F5" ],
+          "width": 120
+        },
+        {
+          "type": "spacer"
+        },
+        {
+          "type": "button",
+          "icon": "\uE721",
+          "keyCodes": [ "VK_F" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 150
+        },
+        {
+          "type": "button",
+          "image": "Resources/google.png",
+          "title": "Search",
+          "keyCodes": [ "VK_E" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 250
+        },
+        {
+          "type": "spacer"
+        },
+        {
+          "type": "button",
+          "icon": "\uE710",
+          "keyCodes": [ "VK_T" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE896",
+          "keyCodes": [ "VK_J" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE81C",
+          "keyCodes": [ "VK_H" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        }
+      ]
+    },
+    {
+      "type": "custom",
+      "application": "chrome.exe",
+      "components": [
+        {
+          "type": "button",
+          "icon": "\uE72B",
+          "keyCodes": [ "LEFT" ],
+          "modifierKeyCodes": [ "MENU" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE72A",
+          "keyCodes": [ "RIGHT" ],
+          "modifierKeyCodes": [ "MENU" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE72C",
+          "keyCodes": [ "F5" ],
+          "width": 120
+        },
+        {
+          "type": "spacer"
+        },
+        {
+          "type": "button",
+          "icon": "\uE721",
+          "keyCodes": [ "VK_F" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 150
+        },
+        {
+          "type": "button",
+          "image": "Resources/google.png",
+          "title": "Search",
+          "keyCodes": [ "VK_E" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 250
+        },
+        {
+          "type": "spacer"
+        },
+
+        {
+          "type": "button",
+          "icon": "\uE710",
+          "keyCodes": [ "VK_T" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE896",
+          "keyCodes": [ "VK_J" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        },
+        {
+          "type": "button",
+          "icon": "\uE81C",
+          "keyCodes": [ "VK_H" ],
+          "modifierKeyCodes": [ "CONTROL" ],
+          "width": 120
+        }
+      ]
+    }
+  ]
+}

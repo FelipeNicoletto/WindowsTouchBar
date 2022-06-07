@@ -25,6 +25,7 @@ internal class Button : Rectangle, ITouchComponent, IDisposable
     {
         CornerRadius = new SKPoint(15, 15);
         FillColor = new SKColor(65, 65, 65);
+        BorderWidth = 0;
         _width = size.Width;
     }
 

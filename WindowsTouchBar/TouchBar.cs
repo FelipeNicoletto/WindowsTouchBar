@@ -156,8 +156,6 @@ internal class TouchBar : IDisposable
 
     private void RefreshView()
     {
-        //if (currentView == customFunctionsView) return;
-
         string? name = null;
 
         try
