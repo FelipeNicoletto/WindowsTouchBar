@@ -1,5 +1,5 @@
 # WindowsTouchBar
-This project is a service to customize the Touch Bar on MacBook running Windows through Bootcamp.
+This project is a service to customize the Touch Bar on MacBook running Windows through Boot Camp.
 
 ## Video
 [![YouTube](https://img.youtube.com/vi/rNw6GQztJYA/0.jpg)](https://www.youtube.com/watch?v=rNw6GQztJYA "YouTube")
