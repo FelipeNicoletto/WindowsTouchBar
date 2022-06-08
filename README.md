@@ -1,5 +1,7 @@
 # WindowsTouchBar
- 
+
+[![YouTube](https://img.youtube.com/vi/rNw6GQztJYA/0.jpg)](https://www.youtube.com/watch?v=rNw6GQztJYA "YouTube")
+
 ## Installation
 
 * [Turn off Secure Boot](https://support.apple.com/en-us/HT208198)
